@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+body {
+  font-size: 16px;
+  background-color: #000;
+  color: #666;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+}
+input, select {
+  width: 100%;
+  height: 45px;
+  padding: 0 30px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 22.5px;
+  outline: none;
+}
+input:focus {
+  color: #0033FF;
+  border: 1px solid #0033FF;
+}
+a {
+  color: #666;
+}
+a:hover {
+  color: #0033FF;
+}
+.active {
+  color: #0033FF;
+}
+.header-main {
+  background-color: #000;
+  color: white;
+  padding: 15px 0;
+}
+.header-main h1 {
+  margin: 0;
+  padding: 0 15px;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.search {
+  position: relative;
+  background: #eee;
+  text-align: center;
+}
+.search input {
+  margin: 15px 0;
+  padding: 0 20px;
+}
+.list-options {
+  background-color: white;
+  padding-bottom: 7.5px;
+}
+.content {
+  background-color: white;
+}
+.invoice-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+h2#listStatus {
+  margin: 0 0 15px 0;
+  padding: 0 15px;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.invoice-item {
+  border-bottom: 1px solid #eee;
+}
+.invoice-item:nth-child(even) {
+  background-color: #eee;
+}
+.invoice-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.invoice-item:hover {
+  cursor: pointer;
+  /*border-color: #0033FF;*/
+  background-color: #000;
+  color: white;
+}
+.invoice-item-col {
+  display: inline-block;
+  float: left;
+  padding: 7.5px 15px;
+  vertical-align: top;
+  font-size: .85em;
+  width: 18.5%;
+}
+.invoice-item-col.id {
+  width: 7.5%;
+}
+.invoice-item-col.status {
+  position: relative;
+}
+.invoice-item-col.status::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: inherit;
+  text-align: center;
+  width: 6px;
+  height: 6px;
+  top: 11px;
+  left: -2.5px;
+}
+.invoice-item-col.status.warning::after {
+  border-color: red;
+  color: white;
+}
+.invoice-item-col.status.danger::after {
+  border-color: red;
+  background-color: red;
+  color: white;
+}
+.invoice-list-options {
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+.invoice-list-options:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.invoice-list-options > div {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: .85em;
+  width: 18.5%;
+}
+.invoice-list-options > div#sortById {
+  width: 7.5%;
+}
+.invoice-list-options > div:hover {
+  color: #0033FF;
+}
+.ascendant, .descendant {
+  position: relative;
+  color: #0033FF;
+  font-weight: bold;
+}
+.ascendant::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 14px;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #0033FF;
+}
+.descendant::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 14px;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #0033FF;
+}
