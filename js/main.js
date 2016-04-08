@@ -275,19 +275,10 @@ function loadCompanies() {
   return companies;
 }
 
-// Simulate Loading
-
-function loadData(event) {
-  var timeoutOne = window.setTimeout(fire,600);
-  function fire() {
-    filterList(event);
-  };
-}
-
 // Assign event listeners
 
 if (this.invoiceInput) {
-  invoiceInput.addEventListener('load',loadData(),false);
+  invoiceInput.addEventListener('load',sortByKey('id',null,'sortById'),false);
   invoiceInput.addEventListener('keyup',filterList,false);
   invoiceInput.focus();
 }

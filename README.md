@@ -2,6 +2,8 @@
 
 ## Simple JS app for invoicing purposes with a functional search input.
 
+## Demo http://ondrejstastny.com/Invoices/
+
 - this app assumes ES5 and IE8
 
 - load only fake data from an object at this moment.
